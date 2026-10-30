@@ -33,6 +33,12 @@ def run(argv: Sequence[str], out: Callable[[str], None], err: Callable[[str], No
     out(f"{path}: {verdict.kind}: {'valid' if verdict.valid else 'NOT valid'}")
     for reason in verdict.reasons:
         out(f"  {reason}")
+    if verdict.signers is not None:
+        out("Who signed:")
+        for role, key_id in verdict.signers.roles.items():
+            out(f"  {role}: {key_id if key_id is not None else 'no key'}")
+        for group in verdict.signers.shared:
+            out(f"  one key signed {', '.join(group)}")
     if verdict.limits:
         out("What this does not establish:")
         for line in verdict.limits:
