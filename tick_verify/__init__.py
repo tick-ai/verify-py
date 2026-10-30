@@ -17,6 +17,7 @@ from .canonical import CanonicalError, canonical, content_hash, document_hash
 
 __all__ = [
     "CanonicalError",
+    "Signers",
     "Verdict",
     "canonical",
     "content_hash",
@@ -27,6 +28,15 @@ __all__ = [
 
 
 @dataclass(frozen=True)
+class Signers:
+    """The key_id behind each role of a receipt of version two ("Who signed"), None where the
+    role's document carries no key, and each group of roles that share one key."""
+
+    roles: dict[str, str | None]
+    shared: list[list[str]]
+
+
+@dataclass(frozen=True)
 class Verdict:
     """What a check found. kind names the document as the specification's verifier does."""
 
@@ -34,6 +44,8 @@ class Verdict:
     valid: bool
     reasons: list[str] = field(default_factory=list)
     limits: list[str] = field(default_factory=list)
+    # Only a receipt of version two has one: who signed each of its four parts.
+    signers: Signers | None = None
 
 
 # One check per schema, each answering (kind, reasons) for a parsed document.
@@ -66,4 +78,12 @@ def verify_document(text: str) -> Verdict:
             [f"the schema is {json.dumps(schema, ensure_ascii=False, separators=(',', ':'))}, which this verifier does not know"],
         )
     kind, reasons = check(parsed, text)
-    return Verdict(kind, not reasons, reasons, _limits(parsed))
+    signers = None
+    if schema == "tick.receipt.v2":
+        signers = Signers(*receipt_v2.signers(parsed))
+    return Verdict(kind, not reasons, reasons, _limits(parsed), signers)
+
+
+# Last, because the modules it imports take CHECKS and Verdict from this one.
+from . import documents  # noqa: E402,F401
+from .kinds import receipt_v2  # noqa: E402
