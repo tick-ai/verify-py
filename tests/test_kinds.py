@@ -639,7 +639,7 @@ class ProjectStatement(Signed, unittest.TestCase):
     def test_a_sum_past_2_to_the_53_cannot_be_added_up_exactly(self) -> None:
         document = changed(self.build(), set_at("statement.tasks.0.tries.0.usd_micros", 2**53))
         document["statement"]["tasks"][0]["tries"][1].update(cost="metered")
-        document["statement"]["totals"].update(usd_micros_reported=0, usd_micros_metered=2**53 + 2000000)
+        document["statement"]["totals"].update(usd_micros_reported=0, usd_micros_metered=2**53)
         self.check_reasons(self.seal(document), ["statement.totals cannot be added up exactly: a sum passes 2^53"])
         document["statement"]["tasks"][0]["tries"][1]["usd_micros"] = 0
         document["statement"]["totals"]["usd_micros_metered"] = 2**53
