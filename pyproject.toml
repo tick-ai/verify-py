@@ -1,0 +1,8 @@
+# What the work in this repository runs on: Python 3.10 or later, its standard
+# library alone. The package's own metadata comes with its first task.
+[project]
+name = "tick-verify"
+version = "0.0.0"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+dependencies = []

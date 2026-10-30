@@ -1,0 +1,14 @@
+{
+  "command": "python",
+  "args": [
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-t",
+    ".",
+    "-v"
+  ],
+  "timeout_ms": 600000
+}
