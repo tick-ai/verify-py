@@ -1,0 +1,465 @@
+{
+ "site-mutants/index-0.content-hash.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the index",
+   "the signature is not the carried key’s over this index"
+  ]
+ },
+ "site-mutants/index-0.head.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "index.projects[0].runs[0].head is not the newest of its statements",
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-0.project-name.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-0.publisher.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-0.run-repeated.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "index.projects[0].runs names one run twice",
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-0.signature.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "the signature is not the carried key’s over this index"
+  ]
+ },
+ "site-mutants/index-0.slug.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "index.projects[0].slug is not lowercase letters and digits joined by single hyphens",
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-1.content-hash.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the index",
+   "the signature is not the carried key’s over this index"
+  ]
+ },
+ "site-mutants/index-1.head.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "index.projects[0].runs[0].head is not the newest of its statements",
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-1.project-name.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-1.publisher.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-1.run-repeated.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "index.projects[0].runs names one run twice",
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-1.signature.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "the signature is not the carried key’s over this index"
+  ]
+ },
+ "site-mutants/index-1.slug.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "index.projects[0].slug is not lowercase letters and digits joined by single hyphens",
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-2.content-hash.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the index",
+   "the signature is not the carried key’s over this index"
+  ]
+ },
+ "site-mutants/index-2.head.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "index.projects[0].runs[0].head is not the newest of its statements",
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-2.project-name.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-2.publisher.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-2.run-repeated.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "index.projects[0].runs names one run twice",
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/index-2.signature.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "the signature is not the carried key’s over this index"
+  ]
+ },
+ "site-mutants/index-2.slug.json": {
+  "kind": "hub-index",
+  "valid": false,
+  "reasons": [
+   "index.projects[0].slug is not lowercase letters and digits joined by single hyphens",
+   "content_hash is not the hash of the index"
+  ]
+ },
+ "site-mutants/keys.empty.json": {
+  "kind": "keys-file",
+  "valid": false,
+  "reasons": [
+   "keys is not a non-empty list"
+  ]
+ },
+ "site-mutants/keys.from.json": {
+  "kind": "keys-file",
+  "valid": false,
+  "reasons": [
+   "keys[0].from is not a day, YYYY-MM-DD"
+  ]
+ },
+ "site-mutants/keys.key-id.json": {
+  "kind": "keys-file",
+  "valid": false,
+  "reasons": [
+   "keys[0].key_id is not 16 lowercase hexadecimal characters"
+  ]
+ },
+ "site-mutants/keys.role.json": {
+  "kind": "keys-file",
+  "valid": false,
+  "reasons": [
+   "keys[0].role is not coordinator or release"
+  ]
+ },
+ "site-mutants/keys.twice.json": {
+  "kind": "keys-file",
+  "valid": false,
+  "reasons": [
+   "keys names one key_id twice"
+  ]
+ },
+ "site-mutants/statement-0.alg.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "the algorithm is rsa, not ed25519"
+  ]
+ },
+ "site-mutants/statement-0.content-hash.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement",
+   "the signature is not the carried key’s over this statement"
+  ]
+ },
+ "site-mutants/statement-0.key-id.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "key_id is not the carried key’s"
+  ]
+ },
+ "site-mutants/statement-0.no-tasks.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "statement.tasks is not a list",
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-0.previous.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-0.run-outcome.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-0.signature.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "the signature is not the carried key’s over this statement"
+  ]
+ },
+ "site-mutants/statement-0.task-state.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-0.task-type.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-0.totals-tries.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "statement.totals.tries is not the sum of the tries",
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-1.alg.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "the algorithm is rsa, not ed25519"
+  ]
+ },
+ "site-mutants/statement-1.content-hash.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement",
+   "the signature is not the carried key’s over this statement"
+  ]
+ },
+ "site-mutants/statement-1.key-id.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "key_id is not the carried key’s"
+  ]
+ },
+ "site-mutants/statement-1.no-tasks.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "statement.tasks is not a list",
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-1.previous.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-1.run-outcome.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-1.signature.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "the signature is not the carried key’s over this statement"
+  ]
+ },
+ "site-mutants/statement-1.task-state.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-1.task-type.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-1.totals-tries.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "statement.totals.tries is not the sum of the tries",
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-2.alg.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "the algorithm is rsa, not ed25519"
+  ]
+ },
+ "site-mutants/statement-2.content-hash.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement",
+   "the signature is not the carried key’s over this statement"
+  ]
+ },
+ "site-mutants/statement-2.key-id.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "key_id is not the carried key’s"
+  ]
+ },
+ "site-mutants/statement-2.no-tasks.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "statement.tasks is not a list",
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-2.previous.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-2.run-outcome.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-2.signature.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "the signature is not the carried key’s over this statement"
+  ]
+ },
+ "site-mutants/statement-2.task-state.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-2.task-type.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site-mutants/statement-2.totals-tries.json": {
+  "kind": "project-statement",
+  "valid": false,
+  "reasons": [
+   "statement.totals.tries is not the sum of the tries",
+   "content_hash is not the hash of the statement"
+  ]
+ },
+ "site/.well-known/tick-keys.json": {
+  "kind": "keys-file",
+  "valid": true,
+  "reasons": []
+ },
+ "site/index.json": {
+  "kind": "hub-index",
+  "valid": true,
+  "reasons": []
+ },
+ "site/indexes/8e1a3444fc970c3b0d24d46dacec2185ab4d44ba54370a415676b883a22927ab.json": {
+  "kind": "hub-index",
+  "valid": true,
+  "reasons": []
+ },
+ "site/indexes/fde3b5528d811ae599e549e003fe10cc04c9acd11cb9ee48aa8eb47e1a320815.json": {
+  "kind": "hub-index",
+  "valid": true,
+  "reasons": []
+ },
+ "site/projects/receipt-check/receipts/01a18bed-5403-77e1-bfa3-b41e3658a8f1.json": {
+  "kind": "receipt",
+  "valid": true,
+  "reasons": []
+ },
+ "site/projects/receipt-check/statements/d5abc8c02ec0abcaba6480d930938d3f8fc162ac1a28c8dc27e8fdc1f070309c.json": {
+  "kind": "project-statement",
+  "valid": true,
+  "reasons": []
+ },
+ "site/projects/tickhub/receipts/01a18beb-ea32-704c-a8d6-a04d9a93cb6f.json": {
+  "kind": "receipt",
+  "valid": true,
+  "reasons": []
+ },
+ "site/projects/tickhub/statements/7329a3da00c15e64157cf86cfb01e3e031de69794d1cb38f767bb33484552fcc.json": {
+  "kind": "project-statement",
+  "valid": true,
+  "reasons": []
+ },
+ "site/projects/verify-py/receipts/01a18bea-f32d-775e-8877-d11bab4ff75b.json": {
+  "kind": "receipt",
+  "valid": true,
+  "reasons": []
+ },
+ "site/projects/verify-py/statements/3deb7836176629c65f3873aaa14bc8095f01700c3946ec1e4302b903c8fd4e74.json": {
+  "kind": "project-statement",
+  "valid": true,
+  "reasons": []
+ }
+}
