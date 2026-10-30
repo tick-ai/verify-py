@@ -17,12 +17,6 @@ taking Tick's word for it. Its tests hold it to the verdict Tick's own
 verifier gives on every receipt published at tick.company/log and on one-byte
 changes to them (`vectors/`).
 
-**Not usable yet.** This commit holds the package's shape: the command, the
-canonical form and the document hash. The check of each document comes with the
-tasks that follow; until then every document is reported as one this verifier
-does not know, and nothing reads as valid. This paragraph goes with the commit
-that checks them all.
-
 ## What a valid verdict means
 
 That the document is the one that was written: not one byte of what its hash
